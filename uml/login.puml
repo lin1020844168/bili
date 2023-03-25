@@ -1,0 +1,18 @@
+@startuml
+participant 前端
+participant 后端
+participant 数据库
+
+activate 前端
+前端 -> 后端: 发送登录请求
+activate 后端
+后端 -> 后端: 校验登录信息
+后端 -> 数据库: 查询用户信息
+activate 数据库
+数据库 --> 后端: 返回用户信息
+deactivate 数据库
+后端 -> 前端: 返回登录结果和token
+前端 -> 前端: 存储token到浏览器
+deactivate 后端
+deactivate 前端
+@enduml

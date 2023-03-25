@@ -1,0 +1,13 @@
+server:
+  port: 8888
+aliyun:
+  sms:
+    access-key-secret: ynCdE8aDWgLx2kY0FEKj3Wz2iCOw5k
+    access-key-id: LTAI5tKhDQHbCn1tmX5rQVYV
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.211.200:8848,192.168.211.200:8849,192.168.211.200:8850
+  application:
+    name: third-party

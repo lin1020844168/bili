@@ -1,0 +1,24 @@
+@startuml
+participant 前端
+participant 后端
+participant 数据库
+
+activate 前端
+前端 -> 前端: 记录浏览历史记录
+前端 -> 后端: 发送历史记录请求
+activate 后端
+后端 -> 数据库: 保存历史记录
+activate 数据库
+数据库 --> 后端: 历史记录保存成功
+deactivate 数据库
+前端->后端: 发送历史读取请求
+后端 -> 后端: 处理历史记录请求
+后端 -> 数据库: 获取历史记录
+activate 数据库
+数据库 --> 后端: 返回历史记录
+deactivate 数据库
+后端 -> 前端: 返回历史记录
+deactivate 后端
+前端 -> 前端: 展示历史记录
+deactivate 前端
+@enduml

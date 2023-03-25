@@ -1,0 +1,22 @@
+@startuml
+
+actor User
+participant 前端 as Frontend
+participant 后端 as Backend
+database 数据库 as Database
+
+User -> Frontend: 发送查询番剧分类项信息请求
+Frontend -> Backend: 发送查询请求
+Backend -> Database: 查询番剧分类项信息
+Database --> Backend: 返回查询结果
+Backend --> Frontend: 返回查询结果
+Frontend --> User: 显示查询结果
+
+User -> Frontend: 发送保存番剧分类项信息请求
+Frontend -> Backend: 发送保存请求
+Backend -> Database: 保存番剧分类项信息
+Database --> Backend: 返回保存结果
+Backend --> Frontend: 返回保存结果
+Frontend --> User: 显示保存结果
+
+@enduml

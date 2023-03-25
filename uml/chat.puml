@@ -1,0 +1,24 @@
+@startuml
+participant User
+participant System
+participant ChatDatabase
+
+User -> System: 打开聊天页面
+System -> System: 加载聊天历史记录
+User -> System: 输入聊天信息
+System -> ChatDatabase: 保存聊天记录
+System -> User: 显示发送聊天信息
+System -> System: 检测聊天类型
+alt 文本聊天
+    System -> System: 发送文本聊天信息
+else 语音聊天
+    System -> System: 发送语音聊天请求
+    System -> User: 接受语音聊天请求
+    System -> System: 开始语音聊天
+else 视频聊天
+    System -> System: 发送视频聊天请求
+    System -> User: 接受视频聊天请求
+    System -> System: 开始视频聊天
+end
+System -> User: 显示聊天信息
+@enduml

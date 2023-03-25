@@ -1,0 +1,14 @@
+@startuml
+
+actor 用户
+participant 前端
+participant 后端
+participant 数据库
+
+用户 -> 前端: 输入查询条件
+前端 -> 后端: 发送查询请求
+后端 -> 数据库: 查询符合条件的番剧信息
+数据库 -> 后端: 返回番剧信息
+后端 -> 前端: 返回符合条件的番剧信息
+
+@enduml

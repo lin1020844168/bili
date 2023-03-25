@@ -1,0 +1,15 @@
+@startuml
+actor User
+participant Client
+participant Server
+
+User -> Client : 输入用户名和密码
+Client -> Server : 发送登录请求
+Server -> Client : 返回Token
+Client -> User : 存储Token
+User -> Client : 发送带Token的请求
+Client -> Server : 发送带Token的请求
+Server -> Client : 返回请求结果
+Client -> User : 显示结果
+
+@enduml

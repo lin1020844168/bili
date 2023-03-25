@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lin.bili.chat.mapper.NotificationMessageMapper">
+    <insert id="insertNotificationMessage" parameterType="com.lin.bili.chat.po.NotificationMessage" >
+        insert into message(id, to_user_id, from_user_id, `method`, `type`, send_time)
+            values(#{id}, #{toUserId}, #{fromUserId}, #{method}, #{type}, #{sendTime});
+        insert into notification_message(id, agree_state)
+            values(#{id}, #{agreeState})
+    </insert>
+    <update id="updateAgreeStateById">
+        update notification_message set agree_state = #{agreeState} where id = #{id}
+    </update>
+</mapper>

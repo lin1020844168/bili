@@ -1,0 +1,27 @@
+@startuml
+actor User
+participant Frontend
+participant Backend
+
+User -> Frontend: 输入关键词
+activate Frontend
+
+Frontend -> Backend: 发送自动补全请求
+activate Backend
+
+Backend -> Database: 查询关键词匹配项
+activate Database
+
+Database --> Backend: 返回匹配结果
+deactivate Database
+
+Backend --> Frontend: 返回自动补全结果
+deactivate Backend
+
+Frontend -> User: 展示自动补全结果
+deactivate Frontend
+
+User -> Frontend: 选择关键词
+activate Frontend
+
+@enduml

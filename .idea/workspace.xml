@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dfb6e0fd-dbcd-484b-8a22-b0b5ca48e29a" name="默认变更列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="AnnotationType" />
+        <option value="Enum" />
+        <option value="Kotlin Class" />
+        <option value="FxmlFile" />
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="mapper" />
+        <option value="Class" />
+        <option value="UML Sequence" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\Program Files (x86)\apache-maven-3.8.1\maven_repo" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../Program Files (x86)/apache-maven-3.8.1" />
+        <option name="userSettingsFile" value="E:\Program Files (x86)\apache-maven-3.8.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="2GKcp8w9l5ZRvTYeiJUStTle8gb" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="DefaultPlantUmlFileTemplate" value="UML Sequence" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/b/springblade" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+    <property name="ts.external.directory.path" value="E:\Program Files\JetBrains\IntelliJ IDEA 2021.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\java\gitdb\bili\jsoup\src\main\java\com\lin\bili\jsuop\exception" />
+      <recent name="E:\java\gitdb\bili\user\src\main\java\com\lin\bili\user\dto" />
+      <recent name="E:\java\gitdb\bili\jsoup\src\main\java\com\lin\bili\jsuop\dto" />
+      <recent name="E:\java\gitdb\bili\api\src\main\java\com\lin\bili\api\vo" />
+      <recent name="E:\java\gitdb\bili\api\src\main\java\com\lin\bili\api\dto" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\java\gitdb\bili\video\src\main\resources\META-INF" />
+      <recent name="E:\java\gitdb\bili\video\src\main\resources\static\video" />
+      <recent name="E:\java\gitdb\bili\starter-redis-utils\src\main\resources" />
+      <recent name="E:\java\gitdb\bili\common\src\main\resources" />
+      <recent name="E:\java\gitdb\bili\search\src\main\resources\META-INF" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.lin.bili.api.feign" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.lin.bili.user.service.impl" />
+      <recent name="com.lin.bili.common.utils" />
+      <recent name="com.lin.bili.user.controller" />
+      <recent name="com.lin.bili.api.controller" />
+      <recent name="com.lin.bili.search.service.impl" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lin.bili.api.dto" />
+      <recent name="com.lin.bili.user.dto" />
+      <recent name="com.lin.bili.video.dto" />
+      <recent name="com.lin.bili.search.dto" />
+      <recent name="com.lin.bili.anime.update" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SearchApplication">
+    <configuration name="AnimeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="anime" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lin.bili.anime.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lin.bili.anime.AnimeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChatApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="chat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lin.bili.chat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lin.bili.chat.ChatApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lin.bili.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lin.bili.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JsoupApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="jsoup" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lin.bili.jsuop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lin.bili.jsuop.JsoupApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="search" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lin.bili.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lin.bili.search.SearchApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VideoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="video" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lin.bili.video.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lin.bili.video.VideoApplication" />
+      <option name="VM_PARAMETERS" value="-javaagent:&quot;E:\environment\aspectj\aspectjweaver-1.9.7.jar&quot; -javaagent:&quot;E:\environment\aspectj\spring-instrument-5.2.9.RELEASE.jar&quot;" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.VideoApplication" />
+      <item itemvalue="Spring Boot.ChatApplication" />
+      <item itemvalue="Spring Boot.AnimeApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.JsoupApplication" />
+      <item itemvalue="Spring Boot.SearchApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.SearchApplication" />
+        <item itemvalue="Spring Boot.JsoupApplication" />
+        <item itemvalue="Spring Boot.ChatApplication" />
+        <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.AnimeApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="dfb6e0fd-dbcd-484b-8a22-b0b5ca48e29a" name="默认变更列表" comment="" />
+      <created>1666140895839</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666140895839</updated>
+      <workItem from="1666140898355" duration="19202000" />
+      <workItem from="1666295724705" duration="27855000" />
+      <workItem from="1666361778587" duration="18260000" />
+      <workItem from="1666386953118" duration="3523000" />
+      <workItem from="1666390909796" duration="1370000" />
+      <workItem from="1666392294367" duration="1571000" />
+      <workItem from="1666394548286" duration="507000" />
+      <workItem from="1666395069505" duration="51000" />
+      <workItem from="1666395140919" duration="401000" />
+      <workItem from="1666395566997" duration="8149000" />
+      <workItem from="1666461161206" duration="10071000" />
+      <workItem from="1666499845711" duration="301000" />
+      <workItem from="1666500155253" duration="4333000" />
+      <workItem from="1666504502120" duration="67000" />
+      <workItem from="1666504589171" duration="15548000" />
+      <workItem from="1666523064603" duration="7984000" />
+      <workItem from="1666545046705" duration="1008000" />
+      <workItem from="1666546072439" duration="73647000" />
+      <workItem from="1666838249200" duration="17142000" />
+      <workItem from="1666911487620" duration="20314000" />
+      <workItem from="1666961731049" duration="17496000" />
+      <workItem from="1667017504892" duration="169000" />
+      <workItem from="1667017693939" duration="39397000" />
+      <workItem from="1667236637896" duration="63664000" />
+      <workItem from="1667610042921" duration="4384000" />
+      <workItem from="1668316208122" duration="10015000" />
+      <workItem from="1669191804054" duration="1304000" />
+      <workItem from="1669521173540" duration="4840000" />
+      <workItem from="1669842850704" duration="47164000" />
+      <workItem from="1670064037894" duration="21718000" />
+      <workItem from="1670187703623" duration="45179000" />
+      <workItem from="1670310064678" duration="7000" />
+      <workItem from="1670310093989" duration="8002000" />
+      <workItem from="1670330319833" duration="50305000" />
+      <workItem from="1670522573577" duration="65069000" />
+      <workItem from="1670706218282" duration="8260000" />
+      <workItem from="1670719746946" duration="110981000" />
+      <workItem from="1671138080112" duration="19873000" />
+      <workItem from="1671183529274" duration="23733000" />
+      <workItem from="1671309375005" duration="39309000" />
+      <workItem from="1671437538639" duration="70000" />
+      <workItem from="1671437625485" duration="59859000" />
+      <workItem from="1671639656303" duration="93000" />
+      <workItem from="1671639766989" duration="21789000" />
+      <workItem from="1671703553625" duration="53445000" />
+      <workItem from="1672137783104" duration="1077000" />
+      <workItem from="1672279876289" duration="165254000" />
+      <workItem from="1672915988878" duration="2265000" />
+      <workItem from="1675333796854" duration="191000" />
+      <workItem from="1675350589087" duration="44339000" />
+      <workItem from="1676693636178" duration="1882000" />
+      <workItem from="1676715115408" duration="34000" />
+      <workItem from="1676715168919" duration="13113000" />
+      <workItem from="1676963026147" duration="15000" />
+      <workItem from="1676974942000" duration="20055000" />
+      <workItem from="1678160382638" duration="6159000" />
+      <workItem from="1678429322892" duration="52888000" />
+      <workItem from="1678759628187" duration="17714000" />
+      <workItem from="1678856597615" duration="205078000" />
+      <workItem from="1679465377485" duration="44582000" />
+      <workItem from="1679663806468" duration="1610000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/bili$ChatApplication.ic" NAME="ChatApplication 覆盖结果" MODIFIED="1679248640836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.lin.bili.chat.*</FILTER>
+    </SUITE>
+  </component>
+</project>

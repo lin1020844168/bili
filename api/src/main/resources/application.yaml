@@ -1,0 +1,9 @@
+server:
+  port: 31000
+spring:
+  application:
+    name: api
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.211.200:8848,192.168.211.200:8849,192.168.211.200:8850

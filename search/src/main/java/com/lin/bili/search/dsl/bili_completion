@@ -1,0 +1,55 @@
+PUT /bili_completion
+{
+  "settings": {
+    "number_of_shards": 2,
+    "number_of_replicas": 1,
+    "analysis": {
+      "analyzer": {
+        "full_pinyin_analyzer": {
+          "tokenizer": "full_pinyin_tokenizer"
+        },
+        "single_ngram_analyzer" : {
+          "tokenizer": "single_ngram_tokenize"
+        }
+      },
+      "tokenizer": {
+        "full_pinyin_tokenizer": {
+          "type": "pinyin",
+          "keep_first_letter": true,
+          "keep_joined_full_pinyin": true,
+          "keep_none_chinese": true,
+          "keep_none_chinese_together": true,
+          "keep_none_chinese_in_joined_full_pinyin": true,
+          "keep_none_chinese_in_first_letter": true,
+          "keep_full_pinyin": false,
+          "none_chinese_pinyin_tokenize": false
+        },
+        "single_ngram_tokenize": {
+          "type": "ngram",
+          "max_gram": 1,
+          "min_gram": 1
+        }
+      }
+    }
+  }
+}
+
+POST /bili_completion/_mapping
+{
+  "properties": {
+    "keyword": {
+      "type": "text",
+      "analyzer": "ik_max_word",
+      "fields": {
+        "keyword_pinyin": {
+          "type": "text",
+          "analyzer": "full_pinyin_analyzer"
+        },
+        "keyword_completion": {
+          "type": "completion",
+          "analyzer": "single_ngram_analyzer"
+        }
+      }
+    }
+  }
+}

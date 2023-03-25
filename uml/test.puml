@@ -1,0 +1,20 @@
+@startuml
+title Netty 聊天功能时序图
+
+actor User as u
+participant Client as c
+participant Server as s
+
+u -> c: 发送聊天信息
+c -> s: 将聊天信息封装成消息
+s -> s: 处理并解析消息
+s -> c: 将消息传递给客户端
+c -> u: 接收到消息并展示
+
+loop 连接保持
+    u -> c: 保持连接
+    c -> s: 心跳包
+    s -> c: 心跳包
+end
+
+@enduml

@@ -1,0 +1,22 @@
+server:
+  port: 20000
+spring:
+  application:
+    name: gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.211.200:8848,192.168.211.200:8849,192.168.211.200:8850
+    gateway:
+      routes:
+        - id: video
+          uri: lb://video
+          predicates:
+            - Path=/api/video/**
+          filters:
+            - RewritePath=/api/(?<segment>/?.*),/$\{segment}
+
+        - id: api
+          uri: lb://api
+          predicates:
+            - Path=/api/**

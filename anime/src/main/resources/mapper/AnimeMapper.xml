@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lin.bili.anime.mapper.AnimeMapper">
+    <select id="getActorNameByAnimeId" parameterType="long" resultType="string">
+        SELECT actor.name
+        FROM actor
+        LEFT JOIN anime_actor_r
+        ON actor.id = anime_actor_r.`actor_id`
+        WHERE anime_actor_r.`anime_id` = #{id}
+    </select>
+    <select id="getStyleIdByAnimeId" parameterType="long" resultType="int">
+        SELECT style_id from anime_style_r where anime_id = #{id}
+    </select>
+    <select id="getStyleNameByAnimeId" parameterType="long" resultType="string">
+        SELECT name
+        FROM style
+                 LEFT JOIN anime_style_r
+                           ON style.`id` = anime_style_r.`style_id`
+        WHERE anime_style_r.`anime_id` = #{id}
+    </select>
+    <select id="getNameByRegionId" parameterType="int" resultType="string">
+        select name from region where id = #{region_id}
+    </select>
+    <resultMap id="animeDetailMap" type="com.lin.bili.anime.dto.DetailAnimeDto" autoMapping="true">
+        <association property="region" column="region_id" select="getNameByRegionId" />
+        <collection property="actorList" column="id" select="getActorNameByAnimeId" />
+        <collection property="styleList" column="id" select="getStyleNameByAnimeId" />
+    </resultMap>
+    <select id="getAnimeDetailById" resultMap="animeDetailMap" parameterType="Long">
+        select id, cover, title, pub_time, region_id, author, season, `rank`
+        from anime
+        where id = #{id}
+    </select>
+    <resultMap id="listToEsAnimeDtoMap" type="com.lin.bili.anime.dto.ToEsAnimeDto" autoMapping="true">
+        <result property="id" column="id" />
+        <collection property="styleIdList" column="id" select="getStyleIdByAnimeId"/>
+    </resultMap>
+    <select id="listToEsAnimeDto" resultMap="listToEsAnimeDtoMap">
+        SELECT `id`,`cover`,`season`,`title`,`partition_id`,
+               `fav_count`,`rank`,`play_count`,`pub_time`,`season_version_id`,
+               `spoken_language_type_id`,`region_id`,`is_finish`
+        FROM anime
+    </select>
+</mapper>

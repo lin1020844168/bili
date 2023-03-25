@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+title 请求视频
+participant 视频服务 as v order 20
+participant api接口 as a order 10
+participant 爬虫服务 as p order 30
+participant 数据库 as d order 40
+
+activate a
+a->v: 请求视频
+activate v
+v->d: 查询数据库是否存在此视频
+activate d
+d->v: 数据库不存在视频（这里可以考虑使用redis）
+note left: 数据库存在视频则重定向到视频资源
+v->p: 调用爬虫服务爬取视频
+activate p
+p->v: 返回视频数据
+v->d: 保存url到数据库
+d->v: 保存成功
+v->a: 重定向到视频资源
+
+@enduml

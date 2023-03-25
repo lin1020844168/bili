@@ -1,0 +1,94 @@
+PUT /bili_anime
+{
+  "settings": {
+    "number_of_shards": 2,
+    "number_of_replicas": 1,
+    "analysis": {
+      "analyzer": {
+        "full_pinyin_analyzer": {
+          "tokenizer": "full_pinyin_tokenizer"
+        },
+        "single_ngram_analyzer" : {
+          "tokenizer": "single_ngram_tokenize"
+        }
+      },
+      "tokenizer": {
+        "full_pinyin_tokenizer": {
+          "type": "pinyin",
+          "keep_first_letter": true,
+          "keep_joined_full_pinyin": true,
+          "keep_none_chinese": true,
+          "keep_none_chinese_together": true,
+          "keep_none_chinese_in_joined_full_pinyin": true,
+          "keep_none_chinese_in_first_letter": true,
+          "keep_full_pinyin": false,
+          "none_chinese_pinyin_tokenize": false
+        },
+        "single_ngram_tokenize": {
+          "type": "ngram",
+          "max_gram": 1,
+          "min_gram": 1
+        }
+      }
+    }
+  }
+}
+
+POST /bili_anime/_mapping
+{
+  "properties": {
+        "cover": {
+          "type": "keyword"
+        },
+        "favCount": {
+          "type": "long"
+        },
+        "id": {
+          "type": "long"
+        },
+        "isFinish": {
+          "type": "boolean"
+        },
+        "partitionId": {
+          "type": "byte"
+        },
+        "playCount": {
+          "type": "long"
+        },
+        "pubTime": {
+          "type": "long"
+        },
+        "rank": {
+          "type": "float"
+        },
+        "regionId": {
+          "type": "byte"
+        },
+        "season": {
+          "type": "keyword"
+        },
+        "seasonVersionId": {
+          "type": "byte"
+        },
+        "spokenLanguageTypeId": {
+          "type": "byte"
+        },
+        "styleIdList": {
+          "type": "integer"
+        },
+        "title": {
+          "type": "text",
+          "analyzer": "ik_max_word",
+          "fields": {
+            "title_pinyin": {
+              "type": "text",
+              "analyzer": "full_pinyin_analyzer"
+            }
+          }
+        },
+        "seasonMonth": {
+          "type": "byte"
+        }
+      }
+    }
+}

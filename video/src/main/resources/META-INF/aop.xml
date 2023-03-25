@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<aspectj>
+    <weaver options="-XnoInline -Xset:weaveJavaxPackages=true -Xlint:ignore ">
+        <!--在编织时导入切面类和需要被切入的目标类-->
+        <include within="com.lin.bili.video..*"/>
+    </weaver>
+    <aspects>
+        <!--指定切面类-->
+        <aspect name="com.lin.bili.video.log.service.VideoOrgServiceImplAspect"/>
+    </aspects>
+</aspectj>

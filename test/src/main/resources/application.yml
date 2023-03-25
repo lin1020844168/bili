@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: search
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.211.200/video?useSSL=true&useUnicode=true&characterEncoding=UTF-8

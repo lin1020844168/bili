@@ -1,0 +1,14 @@
+# 项目排除路径
+/anime/target/
+/api/target/
+/chat/target/
+/common/target/
+/gateway/target/
+/jsoup/target/
+/manager/target/
+/search/target/
+/starter-redis-utils/target/
+/test/target/
+/third-party/target/
+/user/target/
+/video/target/

@@ -1,0 +1,17 @@
+@startuml
+participant 前端
+participant 后端
+participant 数据库
+
+activate 前端
+前端 -> 后端: 发送注册请求
+activate 后端
+后端 -> 后端: 校验注册信息
+后端 -> 数据库: 保存用户信息
+activate 数据库
+数据库 --> 后端: 用户信息保存成功
+deactivate 数据库
+后端 -> 前端: 返回注册结果
+deactivate 后端
+deactivate 前端
+@enduml

@@ -1,0 +1,30 @@
+server:
+  port: 7003
+spring:
+  application:
+    name: video
+
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.211.200/video?useSSL=true&useUnicode=true&characterEncoding=UTF-8
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.211.200:8848,192.168.211.200:8849,192.168.211.200:8850
+#  redis:
+#    cluster:
+#      nodes:
+#        - 172.18.0.19:6379
+#        - 172.18.0.10:6380
+#        - 172.18.0.11:6381
+#        - 172.18.0.12:6382
+#        - 172.18.0.13:6383
+#        - 172.18.0.14:6384
+  redis:
+    port: 6379
+    host: 192.168.211.200
+feign:
+  httpclient:
+    connection-timeout: 10000

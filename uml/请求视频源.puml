@@ -1,0 +1,21 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+title 请求视频源
+participant 视频服务 as v order 20
+participant 用户 as u order 10
+participant 爬虫服务 as p order 30
+participant 数据库 as d order 40
+
+autonumber
+activate u
+u->v: 请求视频源
+activate v
+v->p: 调用爬虫程序拿到视频源信息
+activate p
+p->v: 返回视频源信息
+v->d: 根据视频源信息从数据库拿去视频地址
+activate d
+d->v: 拿到视频地址填充，拿不到就填充视频id和品质
+d->u: 得到视频源
+
+@enduml

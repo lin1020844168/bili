@@ -1,0 +1,17 @@
+@startuml
+
+actor 用户
+participant 后端
+participant 数据源
+participant 爬虫
+participant 数据库
+
+用户 -> 后端: 请求获取番剧信息
+后端 -> 数据源: 发送获取请求
+数据源 -> 爬虫: 接收获取请求
+爬虫 -> 数据源: 获取番剧信息
+数据源 -> 后端: 返回番剧信息
+后端 -> 数据库: 存储番剧信息
+后端 -> 用户: 返回番剧信息
+
+@enduml

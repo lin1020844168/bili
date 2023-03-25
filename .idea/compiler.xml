@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AjcSettings">
+    <option name="ajcPath" value="$PROJECT_DIR$/../../../Program Files (x86)/apache-maven-3.8.1/maven_repo/org/aspectj/aspectjtools/1.8.13/aspectjtools-1.8.13.jar" />
+    <option name="cmdLineParams" value="-Xlint:ignore -showWeaveInfo" />
+    <option name="delegateToJavac" value="true" />
+  </component>
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="manager" />
+        <module name="test" />
+        <module name="jsoup" />
+        <module name="video" />
+        <module name="search" />
+        <module name="common" />
+        <module name="chat" />
+        <module name="starter-redis-utils" />
+        <module name="api" />
+        <module name="user" />
+        <module name="gateway" />
+        <module name="anime" />
+        <module name="third-party" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="anime" target="8" />
+      <module name="api" target="8" />
+      <module name="bili" target="8" />
+      <module name="chat" target="8" />
+      <module name="common" target="8" />
+      <module name="gateway" target="8" />
+      <module name="jsoup" target="8" />
+      <module name="manager" target="8" />
+      <module name="search" target="8" />
+      <module name="starter-redis-utils" target="8" />
+      <module name="test" target="8" />
+      <module name="third-party" target="8" />
+      <module name="user" target="8" />
+      <module name="video" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

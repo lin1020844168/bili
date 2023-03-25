@@ -1,0 +1,26 @@
+@startuml
+participant 前端
+participant 后端
+participant 数据库
+
+activate 前端
+前端 -> 后端: 发送播放进度请求
+activate 后端
+后端 -> 数据库: 存储用户的播放进度
+activate 数据库
+数据库 --> 后端: 返回存储结果
+deactivate 数据库
+后端 -> 前端: 返回存储结果
+deactivate 后端
+
+
+前端 -> 后端: 发送获取播放进度请求
+activate 后端
+后端 -> 数据库: 查询用户的播放进度
+activate 数据库
+数据库 --> 后端: 返回用户的播放进度
+deactivate 数据库
+后端 -> 前端: 返回用户的播放进度
+deactivate 后端
+deactivate 前端
+@enduml

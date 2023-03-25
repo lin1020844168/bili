@@ -1,0 +1,14 @@
+server:
+  port: 30000
+spring:
+  application:
+    name: jsoup
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.211.200:8848,192.168.211.200:8849,192.168.211.200:8850
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.211.200:3306/video?useSSL=true&useUnicode=true&characterEncoding=UTF-8
