@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfb6e0fd-dbcd-484b-8a22-b0b5ca48e29a" name="默认变更列表" comment="" />
+    <list default="true" id="dfb6e0fd-dbcd-484b-8a22-b0b5ca48e29a" name="默认变更列表" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/third-party/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/third-party/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,6 +72,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
@@ -121,14 +125,16 @@
       <recent name="com.lin.bili.anime.update" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SearchApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.AnimeApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -142,19 +148,6 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.lin.bili.anime.AnimeApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChatApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="chat" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lin.bili.chat.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lin.bili.chat.ChatApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -198,6 +191,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="user" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lin.bili.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lin.bili.user.UserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="VideoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="video" />
       <extension name="coverage">
@@ -216,19 +222,19 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.VideoApplication" />
-      <item itemvalue="Spring Boot.ChatApplication" />
-      <item itemvalue="Spring Boot.AnimeApplication" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.JsoupApplication" />
       <item itemvalue="Spring Boot.SearchApplication" />
+      <item itemvalue="Spring Boot.UserApplication" />
+      <item itemvalue="Spring Boot.AnimeApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.SearchApplication" />
-        <item itemvalue="Spring Boot.JsoupApplication" />
-        <item itemvalue="Spring Boot.ChatApplication" />
-        <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.AnimeApplication" />
+        <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="Spring Boot.JsoupApplication" />
+        <item itemvalue="Spring Boot.GatewayApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -301,8 +307,24 @@
       <workItem from="1678856597615" duration="205078000" />
       <workItem from="1679465377485" duration="44582000" />
       <workItem from="1679663806468" duration="1610000" />
-      <workItem from="1679721395534" duration="411000" />
+      <workItem from="1679721395534" duration="2898000" />
+      <workItem from="1679805515747" duration="1020000" />
     </task>
+    <task id="LOCAL-00001" summary="3.25提交">
+      <created>1679722029006</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679722029006</updated>
+    </task>
+    <task id="LOCAL-00002" summary="3.25提交">
+      <created>1679722474160</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679722474160</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,6 +340,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="3.25提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.25提交" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

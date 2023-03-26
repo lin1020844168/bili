@@ -2,8 +2,8 @@ server:
   port: 8888
 aliyun:
   sms:
-    access-key-secret:
-    access-key-id:
+    access-key-secret: ynCdE8aDWgLx2kY0FEKj3Wz2iCOw5k
+    access-key-id: LTAI5tKhDQHbCn1tmX5rQVYV
 spring:
   cloud:
     nacos:
